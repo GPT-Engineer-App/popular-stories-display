@@ -29,7 +29,7 @@ const Index = () => {
   useEffect(() => {
     setFilteredStories(
       stories.filter(story => 
-        story.title.toLowerCase().includes(searchTerm.toLowerCase())
+        story.title && story.title.toLowerCase().includes(searchTerm.toLowerCase())
       )
     );
   }, [searchTerm, stories]);
