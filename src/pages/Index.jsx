@@ -42,7 +42,7 @@ const Index = () => {
             <h1 className="text-2xl font-bold">Hacker News Top Stories</h1>
             <div className="flex items-center">
               <span className="mr-2">Dark Mode</span>
-              <Switch checked={darkMode} onCheckedChange={setDarkMode} />
+              <Switch checked={darkMode} onCheckedChange={() => setDarkMode(!darkMode)} />
             </div>
           </div>
           <div className="mb-4">
